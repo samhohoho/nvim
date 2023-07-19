@@ -36,3 +36,4 @@ keymap.set("n", "dw", 'vb"_d')
 
 -- others
 keymap.set("n", "<C-a>", "gg<S-v>G")
+keymap.set("n", "oo", "o<Esc>")
