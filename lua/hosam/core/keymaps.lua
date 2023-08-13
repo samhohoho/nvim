@@ -34,6 +34,12 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 -- del a word backward
 keymap.set("n", "dw", 'vb"_d')
 
+-- edit vimrc file
+keymap.set("n", "<leader>ev", ":vs $MYVIMRC<cr>")
+
+-- highlights a word
+keymap.set("n", "<leader>", "viw")
+
 -- others
 keymap.set("n", "<C-a>", "gg<S-v>G")
 keymap.set("n", "oo", "o<Esc>")
