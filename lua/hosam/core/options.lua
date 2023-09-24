@@ -40,3 +40,8 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- line wrapping
+opt.wrap = true
+
+opt.title = true
