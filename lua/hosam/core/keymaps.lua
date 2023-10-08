@@ -32,7 +32,10 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 -- highlights a word
-keymap.set("n", "<leader>", "viw")
+-- keymap.set("n", "<leader>", "viw")
+
+-- delete single character without copying into register
+keymap.set("n", "x", '"_x')
 
 -- others
 keymap.set("n", "<C-a>", "gg<S-v>G")
