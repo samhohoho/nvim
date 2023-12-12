@@ -24,7 +24,7 @@ return {
 				--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
 				formatting.prettier.with({
 					extra_filetypes = { "svelte" },
-					extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote", "--no-bracket-spacing" },
+					extra_args = { "--single-quote", "--jsx-single-quote", "--arrow-parens always" },
 				}), -- js/ts formatter
 				formatting.stylua, -- lua formatter
 				diagnostics.eslint_d.with({ -- js/ts linter
