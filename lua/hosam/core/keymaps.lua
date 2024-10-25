@@ -10,10 +10,8 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlights
-keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
-
--- delete single character without copying into register
--- keymap.set("n", "x", '"_x')
+-- keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<ESC>", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
@@ -37,13 +35,16 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
--- others
+-- Center current line
+keymap.set("n", "<A-j>", "jzz", { noremap = true, silent = true })
+keymap.set("n", "<A-k>", "kzz", { noremap = true, silent = true })
+
+-- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
-keymap.set("n", "oo", "o<Esc>")
-keymap.set("n", "j", "jzz")
-keymap.set("n", "k", "kzz")
-keymap.set("n", "<C-d>", "<C-d>zz")
-keymap.set("n", "<C-u>", "<C-u>zz")
-keymap.set("n", "<C-f>", "<C-f>zz")
-keymap.set("n", "<C-b>", "<C-b>zz")
-keymap.set("n", "<S-g>", "<S-g>zz")
+
+-- others
+-- keymap.set("n", "<C-d>", "<C-d>zz")
+-- keymap.set("n", "<C-u>", "<C-u>zz")
+-- keymap.set("n", "<C-f>", "<C-f>zz")
+-- keymap.set("n", "<C-b>", "<C-b>zz")
+-- keymap.set("n", "<S-g>", "<S-g>zz")
