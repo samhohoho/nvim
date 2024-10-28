@@ -10,7 +10,7 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- Save file
-keymap.set({"i", "n"}, "<C-s>", "<cmd>w<CR>", { desc = "Save changes" })
+keymap.set({"i", "n"}, "<C-s>", "<cmd>w<CR><ESC>", { desc = "Save changes" })
 
 -- clear search highlights
 -- keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
